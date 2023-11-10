@@ -1,0 +1,88 @@
+{
+	"info": {
+		"_postman_id": "30210e0b-1747-4a95-9d85-834a590e410c",
+		"name": "AWS Tutorial",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31053494"
+	},
+	"item": [
+		{
+			"name": "Hello World",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://ec2-blah-blah-blah.compute-1.amazonaws.com:5000/",
+					"protocol": "http",
+					"host": [
+						"ec2-blah-blah-blah",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"port": "5000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Employees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://ec2-blah-blah-blah.compute-1.amazonaws.com:5000/employees",
+					"protocol": "http",
+					"host": [
+						"ec2-blah-blah-blah",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"port": "5000",
+					"path": [
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Employees",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"ACM\",\n    \"address\": \"Bergin 116\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://ec2-blah-blah-blah.compute-1.amazonaws.com:5000/employees",
+					"protocol": "http",
+					"host": [
+						"ec2-blah-blah-blah",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"port": "5000",
+					"path": [
+						"employees"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
