@@ -23,7 +23,7 @@ To host a website on EC2, we need to set up a few things first. Run the followin
 ```
 sudo dnf update -y
 
-sudo dnf install -y httpd php php-mysqli mariadb105`
+sudo dnf install -y httpd php php-mysqli mariadb105
 
 sudo systemctl start httpd
 sudo systemctl enable httpd
